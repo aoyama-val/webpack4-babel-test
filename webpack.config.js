@@ -1,4 +1,8 @@
 module.exports = {
+  entry: {
+    'main': './src/index.js',
+    'login': './src/login.js',
+  },
   devtool: 'source-map',
   module: {
     rules: [
@@ -24,3 +28,4 @@ module.exports = {
     ]
   }
 }
+// vim: set ts=2 sts=2 sw=2 expandtab list:
