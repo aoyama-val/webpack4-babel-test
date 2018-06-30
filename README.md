@@ -1,7 +1,11 @@
 # Webpack4 + babelの環境構築サンプル
 
-- ES6をES5にトランスパイル
+## やりたいこと
 
+- ES6をES5にトランスパイル
+- ソースマップが欲しい
+
+## 設定手順
 
 ```
 yarn init -y
@@ -12,7 +16,7 @@ yarn add --dev webpack webpack-cli
   "scripts": {
     "help": "webpack-cli --help",
     "build": "webpack-cli --mode development",
-    "build-production": "webpack-cli --mode production",
+    "build-production": "webpack-cli --mode production && rm -f dist/main.js.map",
     "watch": "webpack-cli --watch --mode development"
   },
 ```
