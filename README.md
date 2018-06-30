@@ -5,7 +5,7 @@
 
 ```
 yarn init -y
-yarn add webpack webpack-cli
+yarn add --dev webpack webpack-cli
 ```
 
 ```
