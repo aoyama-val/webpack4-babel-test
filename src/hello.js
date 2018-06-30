@@ -1,6 +1,6 @@
 export default class Hello {
-    constructor() {
-        this.message = "hogehoge3";
+    constructor(message) {
+        this.message = message;
     }
 
     hello() {

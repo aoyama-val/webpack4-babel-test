@@ -1,4 +1,6 @@
 import Hello from './hello';
 
-const h = new Hello();
-h.hello();
+$(function() {
+    const h = new Hello('webpack4 + babel');
+    h.hello();
+});
