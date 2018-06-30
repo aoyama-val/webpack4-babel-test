@@ -1,10 +1,11 @@
 # Webpack4 + babelの環境構築サンプル
 
-## やりたいこと
+## できるようにしたこと
 
 - ES6をES5にトランスパイル
 - ソースマップが欲しい
     - productionでも生成されてしまうので、デプロイ時には除外するようにする
+- 開発用サーバを起動してライブリロード
 
 ## 設定手順
 
@@ -28,3 +29,5 @@ yarn add --dev webpack webpack-cli
     - 出力先は `./dist/main.js`
     - `--mode development` でビルドするとminifyしない
     - `--mode production` でビルドするとminifyする
+- webpack-dev-server
+    - 参考: http://nogson2.hatenablog.com/entry/2018/02/01/005525

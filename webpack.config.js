@@ -5,6 +5,8 @@ module.exports = {
     'main': './src/index.js',
     'login': './src/login.js',
   },
+  output: {
+  },
   devtool: 'source-map',
   module: {
     rules: [
@@ -29,8 +31,10 @@ module.exports = {
       }
     ]
   },
+  // webpack-dev-serverの設定
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist')
+    // DocumentRoot
+    contentBase: path.resolve(__dirname, 'docroot')
   }
 }
 // vim: set ts=2 sts=2 sw=2 expandtab list:
