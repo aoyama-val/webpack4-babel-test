@@ -6,7 +6,7 @@
   "scripts": {
     "help": "webpack-cli --help",
     "build": "webpack-cli --mode development",
-    "build-production": "webpack-cli --mode production && rm -f dist/main.js.map",
+    "build-production": "webpack-cli --mode production",
     "watch": "webpack-cli --watch --mode development"
   },
   "devDependencies": {

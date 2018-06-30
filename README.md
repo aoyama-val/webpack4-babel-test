@@ -4,6 +4,7 @@
 
 - ES6をES5にトランスパイル
 - ソースマップが欲しい
+    - productionでも生成されてしまうので、デプロイ時には除外するようにする
 
 ## 設定手順
 
@@ -16,7 +17,7 @@ yarn add --dev webpack webpack-cli
   "scripts": {
     "help": "webpack-cli --help",
     "build": "webpack-cli --mode development",
-    "build-production": "webpack-cli --mode production && rm -f dist/main.js.map",
+    "build-production": "webpack-cli --mode production",
     "watch": "webpack-cli --watch --mode development"
   },
 ```
