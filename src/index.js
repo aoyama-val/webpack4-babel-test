@@ -1,1 +1,4 @@
-alert("Hello world! 5");
+import Hello from './hello';
+
+const h = new Hello();
+h.hello();

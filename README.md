@@ -1,3 +1,8 @@
+# Webpack4 + babelの環境構築サンプル
+
+- ES6をES5にトランスパイル
+
+
 ```
 yarn init -y
 yarn add webpack webpack-cli
