@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: {
     'main': './src/index.js',
@@ -26,6 +28,9 @@ module.exports = {
         ]
       }
     ]
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist')
   }
 }
 // vim: set ts=2 sts=2 sw=2 expandtab list:
