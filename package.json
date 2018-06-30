@@ -1,0 +1,16 @@
+{
+  "name": "webpack4-babel-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "help": "webpack-cli --help",
+    "build": "webpack-cli --mode development",
+    "build-production": "webpack-cli --mode production",
+    "watch": "webpack-cli --watch --mode development"
+  },
+  "dependencies": {
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
